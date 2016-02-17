@@ -52,13 +52,11 @@ a {
 
 .timeline-entry {
   position: relative;
-  top: -200px;
-  clear: both;
-  overflow: hidden;
+  margin-top: -100px;
 }
 
-.timeline-entry.first {
-  top: 10px;
+.timeline-entry:first-of-type {
+  margin-top: 10px;
 }
 
 .timeline-icon {
@@ -103,7 +101,7 @@ a {
   z-index: 1;
 }
 
-.timeline-right {
+.timeline-entry:nth-child(even) .timeline-description {
   margin-left: 55%;
 }
 
@@ -120,12 +118,12 @@ a {
   margin-top: -10px;
 }
 
-.timeline-left:after {
+.timeline-entry:nth-child(odd) .timeline-description:after {
   left: 100%;
   border-left-color: #fff;
 }
 
-.timeline-right:after {
+.timeline-entry:nth-child(even) .timeline-description:after {
   right: 100%;
   border-right-color: #fff;
 }
@@ -159,15 +157,6 @@ a {
 
 .timeline-description .landscape img {
   max-width: 200px;
-}
-
-.timeline-description.float-left {
-  float: left;
-}
-
-.timeline-description.float-right {
-  float: right;
-  margin-left: 0;
 }
 
 .image-right {
