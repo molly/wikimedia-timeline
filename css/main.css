@@ -165,8 +165,18 @@ a {
 }
 
 .captioned-image .caption {
+  display: block;
+  line-height: 120%;
   font-style: italic;
   font-size: 80%;
+}
+
+.captioned-image {
+  max-width: 150px;
+}
+
+.captioned-image.landscape {
+  max-width: 200px;
 }
 
 @media only screen and (max-width: 500px) {
