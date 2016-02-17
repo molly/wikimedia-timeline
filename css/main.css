@@ -10,9 +10,16 @@ body {
   font-family: 'Hind Vadodara', sans-serif;
 }
 
+header {
+  background-color: #005289;
+  padding: 50px 0;
+  text-align: center;
+}
+
 h1 {
   font-family: 'Roboto Slab', serif;
-  text-align: center;
+  margin: 0;
+  color: #fff;
 }
 
 .timeline {
@@ -101,6 +108,23 @@ h1 {
 .timeline-right:after {
   right: 100%;
   border-right-color: #fff;
+}
+
+.timeline-description .timestamp {
+  font-style: italic;
+  font-size: 80%;
+}
+
+.timeline-description h2 {
+  line-height: 110%;
+}
+
+.timeline-description h2,
+.timeline-description p,
+.timeline-description ul {
+  margin: 5px 0;
+  -webkit-margin-before: 5px;
+  -webkit-margin-after: 5px;
 }
 
 @media only screen and (max-width: 500px) {
