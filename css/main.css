@@ -101,6 +101,10 @@ a {
   z-index: 1;
 }
 
+.sub-entry {
+  margin-top: 30px;
+}
+
 .timeline-entry:nth-child(even) .timeline-description {
   margin-left: 55%;
 }
