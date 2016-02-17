@@ -92,6 +92,7 @@ a {
   width: 45%;
   background-color: #fff;
   padding: 20px;
+  box-shadow: 0px 1px 2px #999;
 }
 
 .timeline-right {
@@ -127,6 +128,7 @@ a {
 }
 
 .timeline-description h2 {
+  font-family: 'Roboto Slab', serif;
   line-height: 110%;
 }
 
@@ -141,6 +143,10 @@ a {
 .timeline-description img {
   max-width: 150px;
   display: block;
+}
+
+.timeline-description .landscape img {
+  max-width: 200px;
 }
 
 .image-right {
