@@ -53,6 +53,8 @@ a {
 .timeline-entry {
   position: relative;
   top: -200px;
+  clear: both;
+  overflow: hidden;
 }
 
 .timeline-entry.first {
@@ -78,12 +80,16 @@ a {
   line-height: 40px;
 }
 
-.timeline-icon.hire {
+.timeline-icon.green {
   background-color: #59BF51;
 }
 
-.timeline-icon.conflict {
+.timeline-icon.red {
   background-color: #BF413E;
+}
+
+.timeline-icon.grey {
+  background-color: #999;
 }
 
 .timeline-description {
@@ -93,6 +99,8 @@ a {
   background-color: #fff;
   padding: 20px;
   box-shadow: 0px 1px 2px #999;
+  display: inline-block;
+  z-index: 1;
 }
 
 .timeline-right {
@@ -127,6 +135,10 @@ a {
   font-size: 80%;
 }
 
+.timeline-description .timestamp .note {
+  color: #aaa;
+}
+
 .timeline-description h2 {
   font-family: 'Roboto Slab', serif;
   line-height: 110%;
@@ -147,6 +159,15 @@ a {
 
 .timeline-description .landscape img {
   max-width: 200px;
+}
+
+.timeline-description.float-left {
+  float: left;
+}
+
+.timeline-description.float-right {
+  float: right;
+  margin-left: 0;
 }
 
 .image-right {
