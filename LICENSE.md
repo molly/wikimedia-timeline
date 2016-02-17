@@ -1,6 +1,7 @@
 The MIT License (MIT)
 
 Wikimedia Discovery timeline copyright (c) 2016 Molly White
+Normalize.css copyright (c) Nicolas Gallagher and Jonathan Neal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
