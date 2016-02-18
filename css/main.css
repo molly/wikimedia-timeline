@@ -77,6 +77,10 @@ a {
   margin-top: 10px;
 }
 
+.timeline-entry.short {
+  margin-top: -50px;
+}
+
 .timeline-icon {
   position: absolute;
   left: 50%;
