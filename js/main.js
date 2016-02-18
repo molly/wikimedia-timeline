@@ -25,7 +25,8 @@ function hideUnchecked() {
     }
   });
 
-  $timelineEntry.removeClass("odd even");
+  $timelineEntry.removeClass("odd even first");
+  $('.timeline-entry:visible:first').addClass("first");
   $('.timeline-entry:visible:odd').addClass("odd");
   $('.timeline-entry:visible:even').addClass("even");
 }

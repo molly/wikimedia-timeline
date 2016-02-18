@@ -73,7 +73,7 @@ a {
   margin-top: -100px;
 }
 
-.timeline-entry:first-of-type {
+.timeline-entry.first {
   margin-top: 10px;
 }
 
