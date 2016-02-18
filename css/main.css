@@ -194,6 +194,10 @@ a {
   font-size: 90%;
 }
 
+.captioned-image .attribution-link {
+  font-size: 70%;
+}
+
 .captioned-image {
   max-width: 150px;
 }
