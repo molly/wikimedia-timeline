@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
   <head>
     <title>Wikimedia Discovery timeline</title>
     <meta name="description" content="A timeline of events surrounding the Wikimedia Discovery project">
@@ -8,15 +8,29 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <h1>Wikimedia Discovery timeline</h1>
       <p class="header-description">The Wikimedia Foundation has recently focused on the development of a "search and discovery" tool, previously dubbed the <i>Knowledge Engine</i>. Lack of communication with the editing community, poor transparency, and conflicting statements about this undertaking have plagued the project, and unrest has been visible not only within the editing community, but within the Wikimedia Foundation itself.</p>
     </header>
-    <article>
-      <section class="timeline">
-        <div class="timeline-entry">
+    <section>
+      <header class="timeline-filter">
+        <ul>
+          <li>
+            <input type="checkbox" name="filter" id="knowledge-engine" checked /> <label for="knowledge-engine">Knowledge Engine</label>
+          </li>
+          <li>
+            <input type="checkbox" name="filter" id="staff-change" /> <label for="staff-change">Staff changes</label>
+          </li>
+          <li>
+            <input type="checkbox" name="filter" id="unrest" /> <label for="unrest">General unrest</label>
+          </li>
+        </ul>
+      </header>
+      <article class="timeline">
+        <div class="timeline-entry" data-category="['knowledge-engine', 'staff-change']">
           <div class="timeline-icon green">
             <i class="fa fa-plus"></i>
           </div>
@@ -38,7 +52,7 @@
           </div>
         </div>
 
-        <div class="timeline-entry">
+        <div class="timeline-entry" data-category="['unrest']">
           <div class="timeline-icon red">
             <i class="fa fa-frown-o"></i>
           </div>
@@ -53,7 +67,7 @@
           </div>
         </div>
 
-        <div class="timeline-entry">
+        <div class="timeline-entry" data-category="['knowledge-engine', 'staff-change']">
           <div class="timeline-icon green">
             <i class="fa fa-plus"></i>
           </div>
@@ -73,7 +87,7 @@
           </div>
         </div>
 
-        <div class="timeline-entry">
+        <div class="timeline-entry" data-category="['knowledge-engine']">
           <div class="timeline-icon grey">
             <i class="fa fa-television"></i>
           </div>
@@ -87,7 +101,7 @@
           </div>
         </div>
 
-        <div class="timeline-entry">
+        <div class="timeline-entry" data-category="['knowledge-engine', 'staff-change']">
           <div class="timeline-icon green">
             <i class="fa fa-plus"></i>
           </div>
@@ -101,7 +115,7 @@
           </div>
         </div>
 
-        <div class="timeline-entry">
+        <div class="timeline-entry" data-category="['knowledge-engine']">
           <div class="timeline-icon grey">
             <i class="fa fa-television"></i>
           </div>
@@ -116,13 +130,12 @@
             <h2>Term "Knowledge Engine" is used</h2>
             <p>A presentation from June 30, 2015 uses the term "Knowledge Engine,"" as well as a rocket logo.</p>
             <ul>
-              <li><a href="http://wittylama.com/2016/02/15/knowledge-engine-by-wikipedia/">Liam Wyatt: Knowledge Engine by Wikipedia
-</a></li>
+              <li><a href="http://wittylama.com/2016/02/15/knowledge-engine-by-wikipedia/">Liam Wyatt: Knowledge Engine by Wikipedia</a></li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-entry top-margin-cancel">
+        <div class="timeline-entry top-margin-cancel" data-category="['knowledge-engine']">
           <div class="timeline-icon grey">
             <i class="fa fa-pencil"></i>
           </div>
@@ -143,7 +156,9 @@
             </div>
           </div>
         </div>
-      </section>
-    </article>
+      </article>
+    </section>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>

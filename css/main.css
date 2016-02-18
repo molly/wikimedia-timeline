@@ -10,7 +10,7 @@ body {
   font-family: 'Hind Vadodara', sans-serif;
 }
 
-header {
+header.page-header {
   background-color: #005289;
   padding: 50px 0;
   text-align: center;
@@ -48,6 +48,24 @@ a {
   height: 100%;
   width: 4px;
   background: #ccc;
+}
+
+.timeline-filter {
+  background-color: #ccc;
+  padding: 10px 5%;
+}
+
+.timeline-filter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+
+.timeline-filter ul li {
+  display: inline;
+  padding-right: 20px;
 }
 
 .timeline-entry {
@@ -105,7 +123,7 @@ a {
   margin-top: 30px;
 }
 
-.timeline-entry:nth-child(even) .timeline-description {
+.timeline-entry.odd .timeline-description {
   margin-left: 55%;
 }
 
@@ -122,12 +140,12 @@ a {
   margin-top: -10px;
 }
 
-.timeline-entry:nth-child(odd) .timeline-description:after {
+.timeline-entry.even .timeline-description:after {
   left: 100%;
   border-left-color: #fff;
 }
 
-.timeline-entry:nth-child(even) .timeline-description:after {
+.timeline-entry.odd .timeline-description:after {
   right: 100%;
   border-right-color: #fff;
 }
