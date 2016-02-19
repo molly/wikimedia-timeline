@@ -104,8 +104,16 @@ a {
   background-color: #59BF51;
 }
 
+.timeline-icon.lighter-green {
+  background-color: #9BD897;
+}
+
 .timeline-icon.red {
   background-color: #BF413E;
+}
+
+.timeline-icon.lighter-red {
+  background-color: #DC9493;
 }
 
 .timeline-icon.grey {
