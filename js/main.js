@@ -5,6 +5,9 @@ $( document ).ready( function() {
   /* Listen for filter change */
   $("input:checkbox[name=filter]").click(hideUnchecked);
   $("input:checkbox#all").click(checkAll);
+
+  /* Set odd/even entries */
+  reflowEntries();
 });
 
 function hideUnchecked() {
