@@ -4,14 +4,18 @@ $( document ).ready( function() {
 
   /* Listen for filter change */
   $("input:checkbox[name=filter]").click(hideUnchecked);
-
-  /* Hide elements that are not selected */
-  hideUnchecked();
+  $("input:checkbox#all").click(checkAll);
 });
 
 function hideUnchecked() {
+  /* Uncheck the "all" box if one of the filter boxes is unchecked */
+  var $checkedBoxes = $('input:checkbox[name=filter]:checked');
+  if ($checkedBoxes.length > 0) {
+    $('input:checkbox#all').prop('checked', false);
+  }
+
   var filterIds = [];
-  $('input:checkbox[name=filter]:checked').each(function() {
+  $checkedBoxes.each(function() {
     filterIds.push(this.id);
   });
 
@@ -25,14 +29,26 @@ function hideUnchecked() {
     }
   });
 
-  $timelineEntry.removeClass("odd even first");
-  $('.timeline-entry:visible:first').addClass("first");
-  $('.timeline-entry:visible:odd').addClass("odd");
-  $('.timeline-entry:visible:even').addClass("even");
+  reflowEntries();
+}
+
+function checkAll() {
+  $('input:checkbox[name=filter]').prop("checked", true);
+  $('.timeline-entry').each(function() {
+    $(this).show();
+  });
+  reflowEntries();
 }
 
 function hasOverlap(categories, ids) {
   return ids.some(function (id) {
     return categories.indexOf(id) >= 0;
   });
+}
+
+function reflowEntries() {
+  $('.timeline-entry').removeClass("odd even first");
+  $('.timeline-entry:visible:first').addClass("first");
+  $('.timeline-entry:visible:odd').addClass("odd");
+  $('.timeline-entry:visible:even').addClass("even");
 }
