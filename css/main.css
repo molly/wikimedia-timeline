@@ -63,6 +63,10 @@ footer.page-footer a {
   background: #ccc;
 }
 
+.no-js .timeline-filter-wrapper {
+  display: none;
+}
+
 .timeline-filter-wrapper {
   background-color: #ccc;
   padding: 10px 0;
@@ -261,4 +265,29 @@ footer.page-footer a {
     width: 90%;
   }
 
+}
+
+.no-js .timeline::before {
+  left: 0;
+}
+
+.no-js .timeline-icon {
+  left: 0; 
+}
+
+.no-js .timeline-entry {
+  margin-top: 25px;
+}
+
+.no-js .timeline-entry .timeline-description {
+  margin-left: 50px;
+}
+
+.no-js .timeline-entry .timeline-description:after {
+  right: 100%;
+  border-right-color: #fff;
+}
+
+.no-js .timeline-description {
+  width: 90%;
 }
