@@ -105,16 +105,8 @@ a {
   background-color: #59BF51;
 }
 
-.timeline-icon.lighter-green {
-  background-color: #9BD897;
-}
-
 .timeline-icon.red {
   background-color: #BF413E;
-}
-
-.timeline-icon.lighter-red {
-  background-color: #DC9493;
 }
 
 .timeline-icon.grey {
@@ -170,7 +162,7 @@ a {
 }
 
 .timeline-description .timestamp .note {
-  color: #aaa;
+  color: #888;
 }
 
 .timeline-description h2 {
