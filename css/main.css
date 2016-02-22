@@ -5,7 +5,6 @@ html {
 
 body {
   width: 100%;
-  max-width: 1800px;
   height: 100%;
   background-color: #e0e0e0;
   font-family: 'Hind Vadodara', sans-serif;
@@ -27,15 +26,22 @@ a {
   text-decoration: none;
 }
 
-.header-description {
+header.page-header p {
   width: 80%;
+  max-width: 1400px;
+  line-height: 120%;
   color: #eee;
-  margin: 0 auto;
+  margin: 0px auto 10px auto;
+}
+
+header.page-header a {
+  color: #7ACBFF;
 }
 
 .timeline {
   position: relative;
   width: 90%;
+  max-width: 1800px;
   margin: 0px auto;
   padding: 20px 0;
   max-width: 2000px;
