@@ -5,6 +5,7 @@ html {
 
 body {
   width: 100%;
+  max-width: 1800px;
   height: 100%;
   background-color: #e0e0e0;
   font-family: 'Hind Vadodara', sans-serif;
