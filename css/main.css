@@ -188,11 +188,17 @@ footer.page-footer a {
 }
 
 .timeline-description h2,
-.timeline-description p,
 .timeline-description ul {
   margin: 5px 0;
   -webkit-margin-before: 5px;
   -webkit-margin-after: 5px;
+}
+
+.timeline-description p,
+.timeline-description ul {
+  margin: 5px 0 10px 0;
+  -webkit-margin-before: 5px;
+  -webkit-margin-after: 10px;
 }
 
 .timeline-description img {
