@@ -41,10 +41,9 @@ header.page-header a {
 .timeline {
   position: relative;
   width: 90%;
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0px auto;
   padding: 20px 0;
-  max-width: 2000px;
 }
 
 .timeline::before {
@@ -218,6 +217,3 @@ header.page-header a {
   max-width: 200px;
 }
 
-@media only screen and (max-width: 500px) {
-  /* Devices <500px wide */
-}
