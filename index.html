@@ -17,25 +17,27 @@
       <p>This timeline has been developed by <a href="https://en.wikipedia.org/wiki/User:GorillaWarfare">Molly White (User:GorillaWarfare)</a>, and compiled and written with immense help from many other people. It was initially published on [DATE], and will be updated as more events unfold or come to light. To suggest a change, <a href="mailto:gorillawarfarewikipedia@gmail.com">email me</a> or <a href="https://github.com/molly/discovery-timeline">submit a pull request</a> on Github.</p>
     </header>
     <section>
-      <header class="timeline-filter">
-        <ul>
-          <li>
-            <input type="checkbox" name="filter-shortcut" id="all" checked /> <label for="all">All</label>
-          </li>
-          <li>
-            <input type="checkbox" name="filter" id="knowledge-engine" checked /> <label for="knowledge-engine">Knowledge Engine</label>
-          </li>
-          <li>
-            <input type="checkbox" name="filter" id="staff-change" checked /> <label for="staff-change">Staff changes</label>
-          </li>
-          <li>
-            <input type="checkbox" name="filter" id="unrest" checked /> <label for="unrest">General unrest</label>
-          </li>
-          <li>
-            <input type="checkbox" name="filter" id="lila" checked /> <label for="lila">Lila Tretikov</label>
-          </li>
-        </ul>
-      </header>
+      <div class="timeline-filter-wrapper">
+        <header class="timeline-filter">
+          <ul>
+            <li>
+              <input type="checkbox" name="filter-shortcut" id="all" checked /> <label for="all">All</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter" id="knowledge-engine" checked /> <label for="knowledge-engine">Knowledge Engine</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter" id="staff-change" checked /> <label for="staff-change">Staff changes</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter" id="unrest" checked /> <label for="unrest">General unrest</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter" id="lila" checked /> <label for="lila">Lila Tretikov</label>
+            </li>
+          </ul>
+        </header>
+      </div>
       <article class="timeline">
         <div class="timeline-entry" data-category="['knowledge-engine', 'staff-change', 'lila']">
           <div class="timeline-icon green">
@@ -1138,6 +1140,10 @@
           </div>
         </div>
       </article>
+
+      <footer class="page-footer">
+        Text is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">Creative Commons Attribution 3.0 Unported License</a>. All image licensing information can be found on the <a rel="license" href="./attribution.html">attribution</a> page.
+      </footer>
     </section>
 
     <script src="./js/main.js"></script>
