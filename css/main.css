@@ -259,7 +259,8 @@ section.attribution {
     left: 0; 
   }
 
-  .timeline-entry {
+  .timeline-entry,
+  .timeline-entry.short  {
     margin-top: 25px;
   }
 
@@ -289,7 +290,8 @@ section.attribution {
   left: 0; 
 }
 
-.no-js .timeline-entry {
+.no-js .timeline-entry,
+.no-js .timeline-entry.short {
   margin-top: 25px;
 }
 
