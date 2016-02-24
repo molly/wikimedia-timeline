@@ -115,6 +115,7 @@ footer.page-footer a {
   box-shadow: 0px 1px 1px #999;
   text-align: center;
   vertical-align: middle;
+  z-index: 2;
 }
 
 .timeline-icon i {
@@ -166,6 +167,7 @@ footer.page-footer a {
   border-color: #e0e0e0;
   border-width: 10px;
   margin-top: -10px;
+  z-index: 100;
 }
 
 .timeline-entry.odd .timeline-description:after {
@@ -271,14 +273,14 @@ div.etc .description {
 
 /* Make this less sad on mobile */
 
-@media only screen and (min-device-width: 600px) {
+@media only screen and (min-width: 400px) {
   .timeline-entry.even .timeline-description:after {
     left: 100%;
     border-left-color: #fff;
   }
 }
 
-@media only screen and (max-device-width: 600px) {
+@media only screen and (max-width: 400px) {
   .timeline::before {
     left: 0;
   }
