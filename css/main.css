@@ -187,6 +187,18 @@ footer.page-footer a {
   line-height: 110%;
 }
 
+.timeline-description h2 a {
+  text-decoration: inherit;
+  color: inherit;
+  float: right;
+  visibility: hidden;
+}
+
+.timeline-description h2:hover a {
+  visibility: visible;
+  opacity: 0.5;
+}
+
 .timeline-description h2,
 .timeline-description ul {
   margin: 5px 0;
