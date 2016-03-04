@@ -31,6 +31,11 @@ a {
   text-decoration: none;
 }
 
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
 header.page-header p,
 footer.page-footer p {
   width: 80%;
@@ -286,7 +291,7 @@ div.etc .description {
   }
 
   .timeline-icon {
-    left: 0; 
+    left: 0;
   }
 
   .timeline-entry,
@@ -317,7 +322,7 @@ div.etc .description {
 }
 
 .no-js .timeline-icon {
-  left: 0; 
+  left: 0;
 }
 
 .no-js .timeline-entry,
