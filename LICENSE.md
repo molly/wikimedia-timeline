@@ -1,6 +1,6 @@
 The MIT License (MIT)
 
-Wikimedia Discovery timeline copyright (c) 2016 Molly White
+Wikimedia Discovery timeline copyright (c) 2016–2020 Molly White
 
 Normalize.css copyright (c) Nicolas Gallagher and Jonathan Neal
 
