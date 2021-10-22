@@ -14,6 +14,7 @@ header.page-header,
 footer.page-footer {
   padding: 50px 0;
   text-align: center;
+  background-color: #005289;
 }
 
 footer.page-footer {
@@ -242,6 +243,18 @@ div.etc h1 {
 div.etc .description {
   font-size: 80%;
   font-style: italic;
+}
+
+.timeline-icon.green {
+  background-color: #59bf51;
+}
+
+.timeline-icon.red {
+  background-color: #bf413e;
+}
+
+.timeline-icon.grey {
+  background-color: #999;
 }
 
 /* Make this less sad on mobile */
