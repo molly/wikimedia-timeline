@@ -14,7 +14,7 @@ header.page-header,
 footer.page-footer {
   padding: 50px 0;
   text-align: center;
-  background-color: #210a01;
+  background-color: #005289;
 }
 
 footer.page-footer {
@@ -48,6 +48,9 @@ footer.page-footer p {
 header.page-header a,
 footer.page-footer a {
   color: #7ACBFF;
+}
+.timeline-description a{
+  color : #7ACBFF
 }
 
 .timeline {
@@ -134,11 +137,12 @@ footer.page-footer a {
   box-sizing: border-box;
   position: relative;
   width: 45%;
-  background-color: rgb(241, 236, 236);
+  background-color: #333333;
   padding: 20px;
-  box-shadow: 0px 1px 4px rgb(252, 247, 247);
+  box-shadow: 0px 1px 4px rgb(8, 8, 8);
   display: inline-block;
   z-index: 1;
+  color:#cccccc
 }
 
 .sub-entry {
@@ -238,7 +242,7 @@ div.etc {
 }
 
 div.etc h1 {
-  color: #005289;
+  color: #316588;
 }
 
 div.etc .description {
