@@ -6,7 +6,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background-color: #e0e0e0;
+  background-color: #1f1e1e;
   font-family: 'Hind Vadodara', sans-serif;
 }
 
@@ -14,7 +14,7 @@ header.page-header,
 footer.page-footer {
   padding: 50px 0;
   text-align: center;
-  background-color: #005289;
+  background-color: #210a01;
 }
 
 footer.page-footer {
@@ -65,7 +65,7 @@ footer.page-footer a {
   left: 50.2%;
   height: 100%;
   width: 4px;
-  background: #ccc;
+  background: white;
 }
 
 .no-js .timeline-filter-wrapper {
@@ -73,7 +73,7 @@ footer.page-footer a {
 }
 
 .timeline-filter-wrapper {
-  background-color: #ccc;
+  background-color:rgb(14, 13, 13);
   padding: 10px 0;
 }
 
@@ -81,6 +81,7 @@ footer.page-footer a {
   width: 90%;
   max-width: 1600px;
   margin: 0px auto;
+  color: white;
 }
 
 .timeline-filter ul {
@@ -133,9 +134,9 @@ footer.page-footer a {
   box-sizing: border-box;
   position: relative;
   width: 45%;
-  background-color: #fff;
+  background-color: rgb(241, 236, 236);
   padding: 20px;
-  box-shadow: 0px 1px 2px #999;
+  box-shadow: 0px 1px 4px rgb(252, 247, 247);
   display: inline-block;
   z-index: 1;
 }
