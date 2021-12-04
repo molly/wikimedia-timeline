@@ -49,6 +49,9 @@ header.page-header a,
 footer.page-footer a {
   color: #7ACBFF;
 }
+.timeline-description a{
+  color : #7ACBFF
+}
 
 .timeline {
   position: relative;
@@ -73,7 +76,7 @@ footer.page-footer a {
 }
 
 .timeline-filter-wrapper {
-  background-color: #ccc;
+  background-color:#ccc;
   padding: 10px 0;
 }
 
@@ -138,6 +141,7 @@ footer.page-footer a {
   box-shadow: 0px 1px 2px #999;
   display: inline-block;
   z-index: 1;
+  
 }
 
 .sub-entry {
@@ -237,7 +241,7 @@ div.etc {
 }
 
 div.etc h1 {
-  color: #005289;
+  color: #316588;
 }
 
 div.etc .description {
@@ -373,4 +377,23 @@ div.etc .description {
 
 .no-js .timeline-description {
   width: 90%;
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1f1e1e;
+  }
+  .timeline-description {
+    background-color: #333333;
+    box-shadow: 0px 1px 4px rgb(8, 8, 8);
+    color:#cccccc
+  }
+  .timeline-filter-wrapper {
+    background-color:rgb(14, 13, 13);
+    padding: 10px 0;
+  }
+  .timeline-filter {
+   
+    color: white;
+  }
+  
 }
