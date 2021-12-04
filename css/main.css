@@ -49,9 +49,6 @@ header.page-header a,
 footer.page-footer a {
   color: #7ACBFF;
 }
-.timeline-description a{
-  color : #7ACBFF
-}
 
 .timeline {
   position: relative;
@@ -231,6 +228,7 @@ section.attribution {
   width: 90%;
   max-width: 1600px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 div.etc {
@@ -241,7 +239,7 @@ div.etc {
 }
 
 div.etc h1 {
-  color: #316588;
+  color: #005289;
 }
 
 div.etc .description {
@@ -378,22 +376,86 @@ div.etc .description {
 .no-js .timeline-description {
   width: 90%;
 }
+
+/* Dark mode */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #1f1e1e;
+    background-color: #222222;
   }
-  .timeline-description {
-    background-color: #333333;
-    box-shadow: 0px 1px 4px rgb(8, 8, 8);
-    color:#cccccc
+
+  header.page-header,
+  footer.page-footer {
+    background-color: #003356;
   }
-  .timeline-filter-wrapper {
-    background-color:rgb(14, 13, 13);
-    padding: 10px 0;
-  }
-  .timeline-filter {
-   
-    color: white;
+
+  h1,
+  header.page-header p,
+  footer.page-footer p,
+  .timeline-description,
+  .timeline-filter,
+  .timeline-icon i,
+  .attribution,
+  .etc {
+    color: #CCCCCC;
   }
   
+  .timeline-description a,
+  .attribution a,
+  .etc a {
+    color : #7ACBFF
+  }
+
+  div.etc h1 {
+    color: #3086bf;
+  }
+
+  .timeline-description {
+    background-color: #333333;
+    box-shadow: 0px 1px 4px #000000;
+  }
+
+  .timeline-filter-wrapper {
+    background-color:#000000;
+  }
+
+  .timeline::before {
+    background-color: #888888;
+  }
+
+  .timeline-icon {
+    border-color: #888888;
+  }
+
+  /* 20% darker than the light mode versions */
+  .timeline-icon.green {
+    background-color: #337c2e; 
+  }
+
+  .timeline-icon.red {
+    background-color: #722725;
+  }
+
+  .timeline-icon.grey {
+    background-color: #666666;
+  }
+
+  /* Arrows */
+  .no-js .timeline-entry .timeline-description:after {
+    border-right-color: #333333;
+  }
+  @media only screen and (min-width: 769px) {
+    .timeline-entry.even .timeline-description:after {
+      border-left-color: #333333;
+    }
+  }
+  @media only screen and (max-width: 768px) and (min-width: 415px) {
+    .timeline-entry.even .timeline-description:after {
+      border-right-color: #333333;
+    }
+  }
+  @media only screen and (min-width: 415px) {
+    .timeline-entry.odd .timeline-description:after {
+      border-right-color: #333333;
+    }
+  }
 }
