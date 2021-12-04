@@ -47,7 +47,7 @@ footer.page-footer p {
 
 header.page-header a,
 footer.page-footer a {
-  color: #7ACBFF;
+  color: #7acbff;
 }
 
 .timeline {
@@ -73,7 +73,7 @@ footer.page-footer a {
 }
 
 .timeline-filter-wrapper {
-  background-color:#ccc;
+  background-color: #ccc;
   padding: 10px 0;
 }
 
@@ -138,7 +138,6 @@ footer.page-footer a {
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   display: inline-block;
   z-index: 1;
-  
 }
 
 .sub-entry {
@@ -262,14 +261,14 @@ div.etc .description {
 /* Make this less sad on mobile */
 
 @media only screen and (min-width: 769px) {
-  .timeline-entry.even .timeline-description:after {
+  .timeline-entry.even .timeline-description::after {
     left: 100%;
     border-left-color: #fff;
   }
 }
 
 @media only screen and (max-width: 768px) and (min-width: 415px) {
-  .timeline-entry.even .timeline-description:after {
+  .timeline-entry.even .timeline-description::after {
     right: 100%;
     border-right-color: #fff;
   }
@@ -277,7 +276,7 @@ div.etc .description {
 
 
 @media only screen and (min-width: 415px) {
-  .timeline-description:after {
+  .timeline-description::after {
     top: 20px;
     border: solid transparent;
     content: " ";
@@ -290,7 +289,7 @@ div.etc .description {
     z-index: 100;
   }
   
-  .timeline-entry.odd .timeline-description:after {
+  .timeline-entry.odd .timeline-description::after {
     right: 100%;
     border-right-color: #fff;
   }
@@ -328,7 +327,7 @@ div.etc .description {
     width: 100%;
   }
 
-  .timeline:after {
+  .timeline::after {
     display: none;
   }  
 
@@ -368,7 +367,7 @@ div.etc .description {
   margin-left: 50px;
 }
 
-.no-js .timeline-entry .timeline-description:after {
+.no-js .timeline-entry .timeline-description::after {
   right: 100%;
   border-right-color: #fff;
 }
@@ -380,7 +379,7 @@ div.etc .description {
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #222222;
+    background-color: #222;
   }
 
   header.page-header,
@@ -396,13 +395,13 @@ div.etc .description {
   .timeline-icon i,
   .attribution,
   .etc {
-    color: #CCCCCC;
+    color: #ccc;
   }
   
   .timeline-description a,
   .attribution a,
   .etc a {
-    color : #7ACBFF
+    color: #7acbff
   }
 
   div.etc h1 {
@@ -410,19 +409,19 @@ div.etc .description {
   }
 
   .timeline-description {
-    background-color: #333333;
+    background-color: #333;
   }
 
   .timeline-filter-wrapper {
-    background-color:#000000;
+    background-color: #000;
   }
 
   .timeline::before {
-    background-color: #888888;
+    background-color: #888;
   }
 
   .timeline-icon {
-    border-color: #888888;
+    border-color: #888;
   }
 
   /* 20% darker than the light mode versions */
@@ -435,26 +434,26 @@ div.etc .description {
   }
 
   .timeline-icon.grey {
-    background-color: #666666;
+    background-color: #666;
   }
 
   /* Arrows */
-  .no-js .timeline-entry .timeline-description:after {
-    border-right-color: #333333;
+  .no-js .timeline-entry .timeline-description::after {
+    border-right-color: #333;
   }
   @media only screen and (min-width: 769px) {
-    .timeline-entry.even .timeline-description:after {
-      border-left-color: #333333;
+    .timeline-entry.even .timeline-description::after {
+      border-left-color: #333;
     }
   }
   @media only screen and (max-width: 768px) and (min-width: 415px) {
-    .timeline-entry.even .timeline-description:after {
-      border-right-color: #333333;
+    .timeline-entry.even .timeline-description::after {
+      border-right-color: #333;
     }
   }
   @media only screen and (min-width: 415px) {
-    .timeline-entry.odd .timeline-description:after {
-      border-right-color: #333333;
+    .timeline-entry.odd .timeline-description::after {
+      border-right-color: #333;
     }
   }
 }
