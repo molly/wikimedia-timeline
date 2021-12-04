@@ -117,7 +117,7 @@ footer.page-footer a {
   margin-left: -20px;
   border: 4px solid #ccc;
   border-radius: 50%;
-  box-shadow: 0px 1px 1px #999;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
   text-align: center;
   vertical-align: middle;
   z-index: 2;
@@ -135,7 +135,7 @@ footer.page-footer a {
   width: 45%;
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0px 1px 2px #999;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   display: inline-block;
   z-index: 1;
   
@@ -411,7 +411,6 @@ div.etc .description {
 
   .timeline-description {
     background-color: #333333;
-    box-shadow: 0px 1px 4px #000000;
   }
 
   .timeline-filter-wrapper {
